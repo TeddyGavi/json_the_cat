@@ -17,7 +17,7 @@ const fetchBreedDescription = (breedName, callback) => {
       process.exit();
     } else {
       const data = JSON.parse(body); //JSON string into object
-      callback(null, null, data[0].description); //send no errors but send the description to be printed to console
+      callback(null, data[0].description); //send no errors but send the description to be printed to console
     }
 
   });
